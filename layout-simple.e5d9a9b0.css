@@ -17,6 +17,8 @@ html{
 	font-size: 12px;
 }
 
+
+
 .intro {
 	position: fixed;
 	z-index: 10;
@@ -86,7 +88,6 @@ html{
     position: absolute;
     z-index: 99;
     margin: 0;
-    background-color: #DBDEE2;
     display: inline-flex !important;
     height: 100vh;
     opacity: 1;
@@ -113,7 +114,7 @@ html{
     z-index: 99;
     text-align: center;
     background: none;
-    color: black;
+    color: rgb(219, 222, 226);
     width: 0;
     transform-origin: -9px 9px;
     transform: rotate(
@@ -127,7 +128,7 @@ html{
     line-height: 0;
     font-weight: 800;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: rgb(219, 222, 226);
 }
 
 .menu__container {
@@ -177,14 +178,13 @@ html{
 }
 
 .menu-aside li a {
-    color: black;
+    color: rgb(219, 222, 226);
     text-decoration: underline;
 }
 
 .menu-aside li {
     margin: 0 auto;
     min-width: auto;
-    background-color: #FA2929;
 }
 
 .menu-aside li:first-child {
@@ -231,6 +231,12 @@ a:hover{
     text-transform: lowercase;
     bottom: 6px;
     position: relative;
+}
+
+iframe{
+    margin: 0 auto;
+    display: block;
+    width: 890px;
 }
 
 
@@ -971,6 +977,13 @@ p.notes{
 
 }
 
+@media screen and (min-width: 1440px) and (min-height: 900px){
+    .film-frame {
+        width: 70vw;
+        height: 70vh;
+    }
+}
+
 @media screen and (min-width: 1920px) and (min-height: 1080px){
 
 	.img-frame {
@@ -978,6 +991,11 @@ p.notes{
 	    right: 5em;
 	    bottom: 8.9em;
 	}
+
+    .film-frame {
+        width: 70vw;
+        height: 90vh;
+    }
 
     .aside {
         z-index: 99 !important;
@@ -1054,6 +1072,7 @@ p.notes{
     }
 
 }
+
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
@@ -1436,6 +1455,11 @@ p.notes{
 		    font-size: 9px;
 		    line-height: 13px;
 		}
+
+        .film-frame{
+            width: 90vw;
+            height: 40vh;
+        }
 
 		.img-frame {
 		    top: 240px;

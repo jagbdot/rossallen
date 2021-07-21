@@ -31,31 +31,32 @@ body {
 
 
 /* Page Loader */
-.js .loading::before,
-.js .loading::after {
+.js .loading::before {
 	content: '';
 	position: fixed;
-	z-index: 1000;
-}
-
-.js .loading::before {
+	z-index: 100000;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background: var(--color-bg);
+	transition: opacity 500ms
 }
 
 .js .loading::after {
-	top: 50%;
-	left: 50%;
-	width: 60px;
-	height: 60px;
-	margin: -30px 0 0 -30px;
-	opacity: 0.4;
-	background: var(--color-link);
-	animation: loaderAnim 0.7s linear infinite alternate forwards;
+	content: '';
+	position: fixed;
+	z-index: 100000;
+    top: 50%;
+    width: 100%;
+    height: 10%;
+    margin: -30px 0 0 -30px;
+    pointer-events: none;
+    opacity: 1;
+	background: #000 url('preloader.ba468484.gif') no-repeat center center;
+	transition: opacity 500ms
 }
+
 
 @keyframes loaderAnim {
 	to {
@@ -128,7 +129,7 @@ a.frame__demo--current {
     position: absolute;
     z-index: 99;
     margin: 0;
-    background-color: #DBDEE2;
+    background-color: transparent;
     display: inline-flex !important;
     height: 100vh;
     opacity: 1;
@@ -156,7 +157,7 @@ a.frame__demo--current {
     z-index: 99;
     text-align: center;
     background: none;
-    color: black;
+    color: rgb(219, 222, 226);
     width: 0;
     transform-origin: -9px 9px;
     transform: rotate(
@@ -170,7 +171,7 @@ a.frame__demo--current {
     line-height: 0;
     font-weight: 800;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: rgb(219, 222, 226);
 }
 
 .menu__container {
@@ -220,7 +221,7 @@ a.frame__demo--current {
 }
 
 .menu-aside li a {
-    color: black;
+    color: rgb(219, 222, 226);
     text-decoration: underline;
 }
 
@@ -228,7 +229,6 @@ a.frame__demo--current {
     margin: 0 auto;
     min-width: auto;
     line-height: 1.1;
-    background-color: #FA2929;
 }
 
 .menu-aside li:first-child {
@@ -574,7 +574,6 @@ a.frame__demo--current {
     margin: 0 auto;
     min-width: auto;
     line-height: 1.1;
-    background-color: #FA2929;
 }
 
 	.menu-aside li span {
