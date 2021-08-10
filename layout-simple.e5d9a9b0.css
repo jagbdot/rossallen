@@ -83,7 +83,7 @@ html{
     bottom: 0;
     /* padding: 0.8em; */
     padding-left: 0.5em;
-    width: 150px;
+    width: 24px;
     padding: 0;
     position: absolute;
     z-index: 99;
@@ -136,7 +136,7 @@ html{
     display: flex;
     box-sizing: border-box;
     position: relative;
-    right: 27px;
+    right: 0;
     justify-content: center;
     align-items: center;
 }
@@ -151,7 +151,7 @@ html{
     justify-content: center;
     align-items: center;
     list-style: none;
-    width: 95vh;
+    width: 94vh;
     height: 1.8em;
     top: auto;
     position: absolute;
@@ -172,9 +172,10 @@ html{
 }
 
 .menu-aside li span {
-    font-size: 1.5vh;
+    font-size: 13.2px;
     font-family: made_outer_sans !important;
-    font-weight: 100 !important;
+    color: white;
+    font-weight: 400 !important;
 }
 
 .menu-aside li a {
@@ -197,7 +198,7 @@ html{
 
 .aside {
     position: fixed;
-    width: 12vw;
+    width: 4vw;
     height: 100vh;
 }
 
@@ -266,11 +267,14 @@ ul{
 }
 
 .gif-container{
-	left: 150px !important;
+    left: 0;
     width: 89%;
     position: absolute;
     height: 100vh;
+    right: 0;
     z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
     top: 0;
     display: inline-flex;
     float: left;
@@ -283,7 +287,7 @@ ul{
 }
 
 .gif-header {
-    width: 90%;
+    width: 82%;
     position: relative;
     left: 50px;
     top: 0;
@@ -405,10 +409,10 @@ ul{
 }
 
 .close-img{
-	width: 1.2em;
-    margin-right: 0.6em;
+	width: 1.25em;
+    margin-right: 0.3em;
     position: relative;
-    top: 0.2em;
+    top: 0.3em;
 }
 
 .next-img{
@@ -426,7 +430,7 @@ ul{
     margin: 0 auto;
     display: block;
     position: relative;
-    top: 27px;
+    top: 19px;
     text-align: center;
     text-transform: uppercase;
     font-size: 9px;
@@ -503,7 +507,7 @@ ul{
     width: 11em;
     justify-content: center;
     align-items: center;
-    right: 0;
+    right: 5%;
     display: inline-flex;
     font-size: 1.15em;
 }
@@ -527,6 +531,7 @@ video {
     left: 90px;
     right: 5em;
     bottom: 115px;
+
 }
 
 .img-frame-about {
@@ -579,7 +584,7 @@ video {
 
 .more-stuff{
 	text-transform: uppercase;
-    font-size: 0.4em;
+    font-size: 0.5em;
     font-family: 'made_outer_sans';
     font-weight: 100;
 }
@@ -810,14 +815,14 @@ p.notes{
 @media screen and (min-height: 768px) {
 
 	.img-frame {
-	    background-color: black;
-	    overflow: hidden;
-	    position: absolute;
-	    height: 81vh;
-	    z-index: 0;
-	    left: 13.2em;
-	    right: 5em;
-	    bottom: 4.9em;
+        background-color: black;
+        overflow: hidden;
+        position: absolute;
+        height: 81vh;
+        z-index: 0;
+        left: 0;
+        right: 0;
+        bottom: 2.9em;
 	}
 
 	.menu {
@@ -948,7 +953,6 @@ p.notes{
 	    color: white;
 	    left: -5.3em;
 	    font-size: 14px;
-	    bottom: 2.7em;
 	    position: absolute;
 	    transform: rotate(-90deg);
 	}
@@ -962,7 +966,7 @@ p.notes{
 	}
 
 	.project-content p {
-	    font-size: 7px;
+	    font-size: 9px;
 	    color: white;
 	    font-family: "gotham";
 	    font-weight: 300;
@@ -1109,6 +1113,7 @@ p.notes{
 	    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 	}
 
+
 	.intro__90__title {
 	    left: 0;
 	    right: 0;
@@ -1160,7 +1165,6 @@ p.notes{
 	    position: relative;
 	    z-index: 0;
 	    left: 0;
-	    top: 145px;
 	    height: 29em;
 	    margin: 0 auto;
 	    bottom: 6em;
@@ -1168,6 +1172,7 @@ p.notes{
 	    display: block;
 	    bottom: 7em;
 	    width: 85%;
+        top: 215px;
 	}
 
 	video {
@@ -1206,7 +1211,7 @@ p.notes{
 	    position: absolute;
 	    transform: rotate(0) !important;
 	    right: 0;
-	    top: 80px;
+	    top: 25px;
 	    width: 100%;
 	    justify-content: center;
 	    align-items: center;
@@ -1289,6 +1294,7 @@ p.notes{
 
 	.project-title {
 	    left: 25px;
+        width: 30%;
 	}
 
 	.project-title h2 {
@@ -1420,6 +1426,7 @@ p.notes{
 	.intro__90__title {
 	    font-size: 15vw;
 	}
+
 }
 
 	@media screen and (max-width: 768px) and (min-height: 1024px),  screen and (max-width: 600px) and (min-height: 800px){
@@ -1432,7 +1439,7 @@ p.notes{
 	}
 
 	.menu__container {
-	    top: 120px;
+	    top: 25px;
 	}
 
 	.project-content {
@@ -1480,6 +1487,7 @@ p.notes{
 		.serif-title {
     		bottom: 45px;
 		}
+
 
 	}
 

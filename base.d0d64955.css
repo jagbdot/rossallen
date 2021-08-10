@@ -118,6 +118,9 @@ a.frame__demo--current {
 	color: var(--color-text);
 }
 
+.about-link-mobile{
+	display: none
+}
 /*s dksadk */
 
 .intro__90 {
@@ -179,7 +182,7 @@ a.frame__demo--current {
     display: flex;
     box-sizing: border-box;
     position: relative;
-    right: 2.2em;
+    right: 3.8em;
     justify-content: center;
     align-items: center;
 }
@@ -215,9 +218,11 @@ a.frame__demo--current {
 }
 
 .menu-aside li span {
-    font-size: 1.5vh;
+    font-size: 13.2px;
     font-family: made_outer_sans !important;
-    font-weight: 100 !important;
+    color: white;
+    letter-spacing: 0px;
+    font-weight: 400 !important;
 }
 
 .menu-aside li a {
@@ -256,7 +261,7 @@ a.frame__demo--current {
     position: absolute;
     display: grid;
     margin: 0 auto;
-    left: 14.5em;
+    left: 0;
     right: 1em;
     user-select: none;
     counter-reset: menucounter 0;
@@ -266,7 +271,7 @@ a.frame__demo--current {
     top: 0;
     background-color: black;
     height: 5em;
-    left: 14em;
+    left: 2em;
     right: 2em;
     z-index: 98;
 }
@@ -294,8 +299,9 @@ a.frame__demo--current {
 
 .aside {
     position: fixed;
-    width: 12vw;
+    width: 3vw;
     height: 100vh;
+    z-index: 99;
 }
 
 .footer {
@@ -303,20 +309,14 @@ a.frame__demo--current {
     bottom: 0;
     background-color: black;
     height: 5em;
-    left: 14em;
-    right: 2.5em;
+    left: 2em;
+    right: 2em;
     z-index: 98;
 }
 
 .footer a {
-    text-transform: uppercase;
-    font-weight: 200;
-    position: absolute;
-    top: 1.4em;
-    text-decoration: underline;
-    font-size: 1em;
-    left: 2em;
-}
+ 
+ }
 
 .footer h3 {
     position: absolute;
@@ -356,15 +356,26 @@ a.frame__demo--current {
 
 
 .next-img {
-    width: 0.9em;
+    width: 9.9em;
     margin-right: 0px;
     position: absolute;
     height: auto;
     z-index: 80;
     right: 1.2em;
-    top: 3.25em;
-    transform: rotate(90deg);
+    top: 2.25em;
 }
+
+.logo-img {
+	width: 11.1em;
+    margin: 0 auto;
+    position: absolute;
+    height: auto;
+    z-index: 80;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
 
 .menu__item {
     justify-content: start;
@@ -537,7 +548,7 @@ a.frame__demo--current {
     display: flex;
     box-sizing: border-box;
     position: relative;
-    right: 2.2em;
+    right: 6.4em;
     justify-content: center;
     align-items: center;
 }
@@ -552,7 +563,7 @@ a.frame__demo--current {
     justify-content: center;
     align-items: center;
     list-style: none;
-    width: 96vh;
+    width: 94vh;
     height: 1.8em;
     top: auto;
     position: absolute;
@@ -564,8 +575,8 @@ a.frame__demo--current {
 	    position: absolute;
 	    display: grid;
 	    margin: 0 auto;
-	    left: 18em;
-	    width: 86%;
+	    left: 0;
+	    width: 80%;
 	    user-select: none;
 	    counter-reset: menucounter 0;
 	}
@@ -577,9 +588,11 @@ a.frame__demo--current {
 }
 
 	.menu-aside li span {
-	    font-size: 10px;
-	    font-family: made_outer_sans !important;
-	    font-weight: 300 !important;
+    	font-size: 12.8px;
+    	font-family: made_outer_sans !important;
+    	color: white;
+    	letter-spacing: 0.3px;
+    	font-weight: 400 !important;
 	}
 
 	.menu__item {
@@ -615,11 +628,13 @@ a.frame__demo--current {
 	}
 
 	.head {
-	    left: 17.5em;
+	    left: 0em;
+	    right: 0em;
 	}
 
 	.footer {
-	    left: 17.5em;
+	    left: 2em;
+	   	right: 2em;
 	}
 
 	.menu__item-textinner {
@@ -706,6 +721,7 @@ a.frame__demo--current {
 	    margin: 0 auto;
 	    left: 0;
 	    right: 1em;
+	    width: 76%;
 	    user-select: none;
 	    counter-reset: menucounter 0;
 	}
@@ -757,6 +773,40 @@ a.frame__demo--current {
 
 }
 
+@media screen and (max-width: 580px) {
+
+		.number-two{
+			font-size: 6px !important;
+		    text-transform: lowercase;
+		    bottom: 6em !important;
+		    position: relative;
+		}
+
+		.next-img{
+			width: 7.9em;
+		    top: 2.6em;
+		    right: 0;
+		    display: none;
+		}
+
+		.menu {
+		    width: 100%;
+		}
+
+		.about-link-desktop{
+			display: none;
+		}
+		.about-link-mobile{
+			display: block;
+			width: 7em;
+		    text-align: left;
+		    float: left;
+		    left: 1em;
+		    position: absolute;
+		    bottom: 0em;
+		}
+}
+
 @media screen and (max-width: 768px) {
 
 		.intro__90__title {
@@ -805,6 +855,10 @@ a.frame__demo--current {
 			display: block;
 		}
 
+		.menu{
+			width: 76%;
+		}
+
 		.menu__item {
 		    grid-template-columns: auto;
 		}
@@ -843,6 +897,7 @@ a.frame__demo--current {
 		.menu {
 		    padding: 28vh 2vh 0vh;
 		}
+
 }
 
 @media screen and (min-width: 53em) {
@@ -869,6 +924,9 @@ a.frame__demo--current {
 	.menu__item-sub {
 		display: block;
 	}
+			.menu{
+			width: 80%;
+		}
 }
 
 @media (any-pointer: fine) {
