@@ -915,20 +915,21 @@ a{color:#336699;}
 
 
 #projects-mobile ul li:first-child{
-    border-top: 1px solid white;
+    border-top: 0.7px solid #9A9999;
 
 }
 
 #projects-mobile ul li{
     padding: 24px 0;
     text-transform: uppercase;
-    border-bottom: 1px solid white;
+    border-bottom: 0.7px solid #9A9999;
 }
 
 #projects-mobile ul li a{
     width: 100%;
     margin-bottom: 2px;
     font-size: 15px;
+    letter-spacing: 0.6px;
     display: block;
 			color: transparent;
 		-webkit-text-stroke-width: 0.55px;
