@@ -8,6 +8,7 @@
 	<meta name="description" content="Hover animations for a menu where images appear with an effect">
 	<meta name="keywords" content="gsap, animation, hover, menu, image, web design, javascript, template">
 	<meta name="author" content="Codrops">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="shortcut icon" href="favicon.26242483.ico">
 	<link rel="stylesheet" href="https://use.typekit.net/vts4lgd.css">
 	<link rel="stylesheet" type="text/css" href="base.d0d64955.css">
@@ -26,6 +27,21 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 
 <body class="loading">
 	<main>
+		<header>
+		  <button class="hamburger">&#9776;</button>
+		  <button class="cross">&#735;</button>
+		</header>
+
+		<div class="menu-mobile">
+		  <ul>
+		    <a href="https://www.rossallenfilm.com"><li>WORK</li></a>
+		    <a href="https://www.rossallenfilm.com/about"><li>ABOUT</li></a>
+		    <a href="#"><li>CONTACT</li></a>
+		    <a target="_blank" href="https://www.instagram.com/rossallenfilm/"><li>INSTAGRAM</li></a>
+		    <a target="_blank" href="https://vimeo.com/rossallen"><li>VIMEO</li></a>
+		  </ul>
+		</div> 
+
 		<div class="head">
 			<span></span>
 			<img class="logo-img" src="logo.be5d537b.png">
@@ -37,8 +53,8 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				
 				<div class="menu__container">
 					<ul class="menu-aside" data-scroll-section-inview="" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 619, 0, 1); opacity: 1; pointer-events: all;">
-						<li><a href="index.html"><span>Work</span><span class="number">(a)</span></a></li>
-						<li><a class="about-link-desktop" href="index6.html"><span>About</span><span class="number">(b)</span></a></li>
+						<li><a href="https://www.rossallenfilm.com"><span>Work</span><span class="number">(a)</span></a></li>
+						<li><a class="about-link-desktop" href="https://www.rossallenfilm.com/about"><span>About</span><span class="number">(b)</span></a></li>
 						<li><a href="https://jagbdot.github.io/rossallen_contact/"><span>Contact</span><span class="number">(c)</span></a></li>
 					</ul>
 				</div>
@@ -48,48 +64,93 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 		<div class="footer">
 			<a target="_blank" href="https://www.instagram.com/rossallenfilm/"></a>
 			<h3></h3>
-			<a class="about-link-mobile" href="index6.html"><span>About</span><span class="number-two">(b)</span></a>
+			<a class="about-link-mobile" href="https://www.rossallenfilm.com/about"><span>About</span><span class="number-two">(b)</span></a>
 			<span><a target="_blank" href="https://www.instagram.com/rossallenfilm/">Instagram</a></span>
 		</div>
 
+		<nav id="projects-mobile">
+			<ul>
+				<li>
+					<a href="https://www.rossallenfilm.com/heartbeat">heartbeat</a>
+					<span>[Commercial]</span>
+				</li>
+				<li>
+					<a href="https://www.rossallenfilm.com/the-limit-of-love">The Limit of love</a>
+					<span>[Short film]</span>
+				</li>
+				<li>
+					<a href="https://www.rossallenfilm.com/first-date">First date</a>
+					<span>[Commercial]</span>
+				</li>
+				<li>
+					<a href="https://www.rossallenfilm.com/quest">Quest</a>
+					<span>[Commercial]</span>
+				</li>
+				<li>
+					<a href="https://www.rossallenfilm.com/harlequin-gold">Harlequin Gold</a>
+					<span>Bad [Music video]</span>
+				</li>
+				<li>
+					<a href="https://www.rossallenfilm.com/you-got-it">Shaw</a>
+					<span>You got it [Commercial]</span>
+				</li>
+				<li>
+					<a href="https://www.rossallenfilm.com/walk-alone">Walk Alone</a>
+					<span>[Commercial]</span>
+				</li>
+				<li>
+					<a href="https://www.rossallenfilm.com/england-rugby">England Rugby</a>
+					<span>[Commercial]</span>
+				</li>
+				<li>
+					<a href="https://www.rossallenfilm.com/foundations-dir-cut">Foundations</a>
+					<span>[Commercial]</span>
+				</li>
+				<li>
+					<a href="https://www.rossallenfilm.com/the-olin-sisters">The Olin Sisters</a>
+					<span>[Short film]</span>
+				</li>
+			</ul>	
+		</nav>
+
 		<nav class="menu">
-			<a href="heartbeat.html" class="menu__item" data-img="img/demo1/list0.gif">
+			<a href="https://www.rossallenfilm.com/heartbeat" class="menu__item" data-img="img/demo1/list0.gif">
 				<span class="menu__item-text"><span class="menu__item-textinner">Heartbeat</span></span>
 				<span class="menu__item-sub">[Commercial] <div class="award"><img src="vimeo.9f7ad100.png"><img src="onefour.db2dcd67.png"><img class="yda" src="yda.296171ea.png"></div></span>
 			</a>
-			<a href="the-limit-of-love.html" class="menu__item" data-img="img/demo1/list1.gif">
+			<a href="https://www.rossallenfilm.com/the-limit-of-love" class="menu__item" data-img="img/demo1/list1.gif">
 				<span class="menu__item-text"><span class="menu__item-textinner">The limit of love</span></span>
 				<span class="menu__item-sub">[short film] <div class="award"><img class="dn" src="dn.6970f653.png"></div></span>
 			</a>
-			<a href="first-date.html" class="menu__item" data-img="img/demo1/list2.gif">
+			<a href="https://www.rossallenfilm.com/first-date" class="menu__item" data-img="img/demo1/list2.gif">
 				<span class="menu__item-text"><span class="menu__item-textinner">First Date</span></span>
 				<span class="menu__item-sub">[Commercial]</span>
 			</a>
-			<a href="quest.html" class="menu__item" data-img="img/demo1/list3.gif">
+			<a href="https://www.rossallenfilm.com/quest" class="menu__item" data-img="img/demo1/list3.gif">
 				<span class="menu__item-text"><span class="menu__item-textinner">Quest</span></span>
-				<span class="menu__item-sub">Commercial</span>
+				<span class="menu__item-sub">[Commercial]</span>
 			</a>
-			<a href="harlequin-gold.html" class="menu__item" data-img="img/demo1/list4.gif">
+			<a href="https://www.rossallenfilm.com/harlequin-gold" class="menu__item" data-img="img/demo1/list4.gif">
 				<span class="menu__item-text"><span class="menu__item-textinner">Harlequin Gold</span></span>
 				<span class="menu__item-sub">Bad [Music video]</span>
 			</a>
-			<a href="you-got-it.html" class="menu__item" data-img="img/demo1/list5.gif">
+			<a href="https://www.rossallenfilm.com/you-got-it" class="menu__item" data-img="img/demo1/list5.gif">
 				<span class="menu__item-text"><span class="menu__item-textinner">Shaw</span></span>
 				<span class="menu__item-sub">You got it [Commercial]</span>
 			</a>
-			<a href="walk-alone.html" class="menu__item" data-img="img/demo1/list6.gif">
+			<a href="https://www.rossallenfilm.com/walk-alone" class="menu__item" data-img="img/demo1/list6.gif">
 				<span class="menu__item-text"><span class="menu__item-textinner">Walk Alone</span></span>
 				<span class="menu__item-sub">[Commercial]</span>
 			</a>
-			<a href="england-rugby.html" class="menu__item" data-img="img/demo1/list7.gif">
+			<a href="https://www.rossallenfilm.com/england-rugby" class="menu__item" data-img="img/demo1/list7.gif">
 				<span class="menu__item-text"><span class="menu__item-textinner">England Rugby</span></span>
 				<span class="menu__item-sub">[Commercial]</span>
 			</a>
-			<a href="foundations-dir-cut.html" class="menu__item" data-img="img/demo1/list8.gif">
+			<a href="https://www.rossallenfilm.com/foundations-dir-cut" class="menu__item" data-img="img/demo1/list8.gif">
 				<span class="menu__item-text"><span class="menu__item-textinner">Foundations</span></span>
 				<span class="menu__item-sub">[commercial]</span>
 			</a>
-			<a href="the-olin-sisters.html" class="menu__item" data-img="img/demo1/list9.gif">
+			<a href="https://www.rossallenfilm.com/the-olin-sisters" class="menu__item" data-img="img/demo1/list9.gif">
 				<span class="menu__item-text"><span class="menu__item-textinner">The Olin Sisters</span></span>
 				<span class="menu__item-sub">[Short film]</span>
 			</a>
@@ -101,5 +162,21 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 	</svg>
 	
 	<script src="demo1.151408fb.js"></script>
+	<script>$(document).ready(function () {
+  $(".cross").hide();
+  $(".menu-mobile").hide();
+  $(".hamburger").click(function () {
+    $(".menu-mobile").slideToggle("slow", function () {
+      $(".hamburger").hide();
+      $(".cross").show();
+    });
+  });
+  $(".cross").click(function () {
+    $(".menu-mobile").slideToggle("slow", function () {
+      $(".cross").hide();
+      $(".hamburger").show();
+    });
+  });
+});</script>
 </body>
 </html>

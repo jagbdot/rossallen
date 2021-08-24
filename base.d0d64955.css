@@ -8,6 +8,8 @@
 	font-size: 12px;
 }
 
+
+
 body {
 	margin: 0;
 	--color-frame-bg: #000;
@@ -403,7 +405,7 @@ a.frame__demo--current {
 }
 
 .logo-img {
-	width: 11.1em;
+	width: 12.1em;
     margin: 0 auto;
     position: absolute;
     height: auto;
@@ -574,6 +576,19 @@ a.frame__demo--current {
 
 .credits a {
 	text-decoration: underline;
+}
+
+
+.menu-mobile{
+	display: none;
+}
+
+header{
+	display: none;
+}
+
+#projects-mobile{
+	display: none;
 }
 
 @media screen and (min-width: 1800px) {
@@ -813,6 +828,135 @@ a.frame__demo--current {
 }
 
 @media screen and (max-width: 580px) {
+
+		.menu{
+			display: none;
+		}
+
+		.menu__container{
+			display: none;
+		}
+
+		.footer{
+			display: none;
+		}
+
+header{
+	width:100%; 
+	background:black; 
+	height:60px; 
+	line-height:60px;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+
+.menu-mobile{display: none;z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu-mobile ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu-mobile li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu-mobile li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu-mobile ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu-mobile ul li a:hover {  color: #666; text-decoration:none;}
+.menu-mobile a{text-decoration:none; color:#666;}
+.menu-mobile a:hover{text-decoration:none; color:#666;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+header{display:inline-block; font-size:12px;}
+span{padding-left:20px;}
+a{color:#336699;}
+
+#projects-mobile{
+	display: block
+}
+
+#projects-mobile ul{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+#projects-mobile ul li:first-child{
+    border-top: 1px solid white;
+
+}
+
+#projects-mobile ul li{
+    padding: 24px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+}
+
+#projects-mobile ul li a{
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 15px;
+    display: block;
+			color: transparent;
+		-webkit-text-stroke-width: 0.55px;
+	    -webkit-text-stroke-color: white;
+}
+
+#projects-mobile ul li span{
+	font-size: 0.8em;
+    font-weight: 100;
+    text-transform: lowercase;
+    padding: 0;
+}
+
+.aside{
+	display: none;
+}
+
+html.has-scroll-smooth{
+	overflow: unset !important;
+}
+
+.has-scroll-smooth body{
+	overflow: unset !important;
+}
+
+body{
+	overflow: unset;
+}
 
 		.number-two{
 			font-size: 6px !important;
